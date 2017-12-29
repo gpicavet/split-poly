@@ -1,0 +1,20 @@
+{
+  "name": "split-poly",
+  "version": "1.0.0",
+  "description": "split an arbitrary polygon with a line",
+  "main": "index.js",
+  "license": "MIT",
+  "repository": "gpicavet/split-poly",
+  "scripts": {
+    "test": "tape test.js"
+  },
+  "author": {
+    "name": "Grégory Picavet",
+    "email": "gpicavet@gmail.com",
+    "url": "gpicavet.github.io"
+  },
+  "devDependencies": {
+    "is-equal": "^1.5.5",
+    "tape": "^4.8.0"
+  }
+}

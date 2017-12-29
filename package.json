@@ -1,6 +1,6 @@
 {
   "name": "split-poly",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "split an arbitrary polygon with a line",
   "main": "index.js",
   "license": "MIT",

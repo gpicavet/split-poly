@@ -1,8 +1,8 @@
 'use strict';
 
-function cutPolyLine2D(poly, rayOrig, rayDir) {
+function splitPolygon(poly, rayOrig, rayDir) {
 	if(!poly || poly.length<3)
-		throw "poly must have at least 3 vertices";
+		throw "input polygon must have at least 3 vertices";
 
 	var interPoints = [];
 
@@ -91,7 +91,7 @@ function cutPolyLine2D(poly, rayOrig, rayDir) {
 				curPoly = [];
 				output.push(curPoly);
 			}
-			//add the inter point the new current
+			//add the inter point to the new current
 			curPoly.push(interPoints[inter].p);
 		}
 
@@ -101,5 +101,5 @@ function cutPolyLine2D(poly, rayOrig, rayDir) {
 }
 
 module.exports = {
-	cutPolyLine2D
+	splitPolygon
 }
